@@ -1,0 +1,58 @@
+/* Reset Css */
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --body--background--color: #41444B;
+    --clock--container--color: #838383;
+    --clock--area--background--color: #D8D3CD;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--body--background--color);
+}
+.clock-container {
+    width: 80%;
+    height: 600px;
+    background-color:var(--clock--container--color);
+    border-radius: 75px;
+    box-shadow: 0px 0px 150px 0px rgba(255,255,255,1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.clock-area { 
+    margin-top: 75px;
+    width: 60%;
+    height: 300px;
+    background-color: var(--clock--area--background--color);
+    border-radius: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock-area div{
+    font-size: 150px;
+    font-weight: bold;
+}
+.date-area { 
+    width: 60%;
+    height: 100px;
+    background-color: var(--clock--area--background--color);
+    border-radius: 75px;
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.date-area div:nth-child(1),
+.date-area div:nth-child(2){
+    margin-right: 10px;
+}
