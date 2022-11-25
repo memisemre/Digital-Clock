@@ -5,6 +5,7 @@ setInterval(()=>{
     if(date.getHours()<=9){
         document.querySelector(".hour").innerHTML = `0${date.getHours()}`;
     }
+
     document.querySelector(".minute").innerHTML = date.getMinutes();
     if(date.getMinutes() <=9){
         document.querySelector(".minute").innerHTML = `0${date.getMinutes()}`;
